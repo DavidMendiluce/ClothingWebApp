@@ -1,0 +1,31 @@
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5.5vh;
+  text-align: center;
+}
+.navBar {
+  background: rgba(5,5,5,0.1)
+}
+ul {
+text-align: center;
+position: relative;
+right: 15vh;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  top: 1vh;
+  padding: 9vh;
+}
+
+form {
+  position: relative;
+  left: 90vh;
+  top: -1vh;
+}
+
+.searcher {
+  width: 25vh;
+  border-radius: 0.8vh;
+}
