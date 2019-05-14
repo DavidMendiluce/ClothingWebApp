@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <head>
 <title>Le Rousse</title>
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link rel="stylesheet" href="public/style.css">
 
 </head>
@@ -11,6 +12,21 @@
 
 
 <header id="home">
+  <h1>Le Rousse</h1>
+  <div class="navBar">
+  <ul>
+    <li>Le Rousse</li>
+    <li>Ultima Semana</li>
+    <li>Coleccion</li>
+    <li>Calzado</li>
+    <li>Bolsos</li>
+    <li>Accesorios</li>
+    <form>
+      <input class="searcher" type="search" placeholder="search"></type>
+    </form>
+  </ul>
+</div>
+
 </header>
 
 
