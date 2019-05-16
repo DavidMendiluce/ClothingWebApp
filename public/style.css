@@ -20,12 +20,113 @@ form .float-right {
 nav .collapse .navbar-collapse .bg-light{
   margin-right: 0vh;
 }
+
 div .navbar-nav{
   margin-left: 44vh;
+}
+
+#paris {
+  width: 200vh;
+  height: 150vh;
+}
+
+#heels {
+  width: 80vh;
+  height: 80vh;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#heelsu {
+  width: 200vh;
+  height: 80vh;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#handbag {
+  width: 119vh;
+  height: 80vh;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 nav .float-right{
   position: relative;
   top: -8vh;
   right: 10vh;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption  {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    border-radius: 1vh;
+    background: rgba(255, 255, 255, 0.5);
+    width: 30vh;
+    padding: 1.5vh;
+}
+
+#heelsCaption {
+  left: 7vh;
+}
+
+#handbagCaption  {
+    left: 87vh;
+    border-left: 0;
+}
+
+.carousel-inner {
+  width: 200vh;
+  height: 65vh;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  height: 40vh;
+}
+
+footer h5 {
+  color: white;
+}
+
+footer ul {
+  padding-top: 1.5vh;
+}
+
+footer li {
+  padding: 0.5vh;
+}
+footer .row {
+  margin-top: 3vh;
+  width: 100vh;
+}
+
+#mailRow {
+  margin-left: 125vh;
+  margin-top: -22vh;
+  width: 50vh;
+}
+
+#socialMediaRow {
+  position: relative;
+  top: 3vh;
+  left: 46vh;
+}
+
+#socialMediaRow img:hover {
+  cursor: pointer;
+}
+
+#facebook {
+  position: relative;
+  left: 10px;
+  top: 9.5px;
 }

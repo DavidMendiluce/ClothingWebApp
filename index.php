@@ -7,7 +7,7 @@
 <title>Le Rousse</title>
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./public4/style.css" >
+<link rel="stylesheet" type="text/css" href="./public/style.css" >
 
 </head>
 
