@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./public/style.css" >
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Le Rousse</a>
+            <a onclick="myFunction()" class="nav-link" href="#">Le Rousse</a>
           </li>
           <li class="nav-item" >
             <a class="nav-link" href="#">Ultima Semana</a>
@@ -44,7 +44,8 @@
         <img class="float-right" src="img/navigation.png" width="35vh" height="35vh">
         <img class="float-right" src="img/user.png" width="35vh" height="35vh">
         <img class="float-right" src="img/cart.png" width="35vh" height="35vh">
-           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <span class="fa fa-search"></span>
+           <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
          </form>
      </div>
   </nav>
@@ -70,27 +71,28 @@
   </div>
 
 <div class="row justify-content-center">
-  <div class="col">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-
+  <div class="col thumbnail">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!--indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
     <!-- wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active mx-auto">
-        <img src="img/friends.jpg" class="d-block w-100" alt="friends">
+        <img src="img/friends.jpg" class="d-block w-100 rounded border border-secondary" alt="First Slide">
+        <div id="carrusel" class="carousel-caption d-none d-md-block border border-light border-left-0 border-bottom-0">
+          <h5>Producto 1</h5>
+        </div>
       </div>
       <div class="carousel-item mx-auto">
-        <img src="img/handbag.jpg" class="d-block w-100" alt="paris">
+        <img src="img/handbag.jpg" class="d-block w-100 rounded border border-secondary" alt="Second Slide">
+        <div id="carrusel" class="carousel-caption d-none d-md-block border border-light border-left-0 border-bottom-0">
+          <h5>Producto 2</h5>
+        </div>
       </div>
   </div>
-     <!-- controls -->
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
   </div>
 </div>
 </div>
@@ -100,11 +102,11 @@
   <div class="col thumbnail">
     <img id="heels" class="rounded border border-secondary" src="img/heels.jpg">
     <div id="heelsCaption"class="caption d-block border border-light">
-      <h3>Calzado</h3>
+      <h3>Accesorios</h3>
     </div>
     <img id="handbag" class="rounded border border-secondary" src="img/handbag.jpg">
     <div id="handbagCaption"class="caption d-block border border-light">
-      <h3>Bolsos</h3>
+      <h3>Abrigos</h3>
     </div>
   </div>
 </div>
@@ -113,19 +115,19 @@
   <div class="col thumbnail">
     <img id="heelsu" class="rounded border border-secondary" src="img/heels.jpg">
     <div id="heelsCaption"class="caption d-block border border-light">
-      <h3>Calzado</h3>
+      <h3>Tendencias</h3>
     </div>
   </div>
 </div>
 
 <div class="row">
 
-  <div class="col">
-    <nav class="navbar-light bg-dark">
+  <div id="blog" class="col">
+    <nav  class="navbar-light">
       <a class="navbar-brand" href="#">
-         <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/logo.png" alt="Gloria's Gardening Logo" height="30">
+         <img src="img/blog.png" alt="Blog Logo" height="80">
+      <h3>Fitness y lifestyle</h3>
       </a>
-      <h3 class="ml-3">Fitness y lifestyle</h3>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#">Unirse</a>
@@ -134,42 +136,50 @@
   </div>
 </div>
 
-<div class="row">
+<div id="fitness" class="row">
 
   <div class="col">
-    <div class="card h-100">
+    <div class="card">
     <img class="card-img-top" src="img/heels.jpg">
     <div class="card-body">
+      <h5 class="card-title">Titulo</h5>
       <p class="card-text">
         bla bla bla
       </p>
+          <p class="card-text"><small class="text-muted">Last update 4 mins</small></p>
     </div>
   </div>
 </div>
 
 <div class="col">
-  <div class="card h-100">
+  <div class="card">
   <img class="card-img-top" src="img/heels.jpg">
   <div class="card-body">
+    <h5 class="card-title">Titulo</h5>
     <p class="card-text">
-      bla bla bla
+      bla bla bla blablablalblalbalblalblalblalblalblalblalblalblablalbalblalblalblalblalbalblalblalblalblaba
     </p>
+    <p class="card-text"><small class="text-muted">Last update 4 mins</small></p>
   </div>
 </div>
 </div>
 
 <div class="col">
-  <div class="card h-100">
+  <div class="card">
   <img class="card-img-top" src="img/heels.jpg">
   <div class="card-body">
+    <h5 class="card-title">Titulo</h5>
     <p class="card-text">
       bla bla bla
     </p>
+        <p class="card-text"><small class="text-muted">Last update 4 mins</small></p>
   </div>
 </div>
 </div>
+</div>
 
-<div class="row justify-content-center">
+<div id ="carouselControls" class="row">
+<div  class="row justify-content-center">
   <div class="col">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
@@ -177,9 +187,15 @@
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active mx-auto">
         <img src="img/friends.jpg" class="d-block w-100" alt="friends">
+        <div id="ultimo" class="carousel-caption d-none d-md-block border border-light">
+          <h5 class="text-uppercase">Lo Último</h5>
+        </div>
       </div>
       <div class="carousel-item mx-auto">
         <img src="img/handbag.jpg" class="d-block w-100" alt="paris">
+        <div id="ultimo" class="carousel-caption d-none d-md-block border border-light">
+          <h5 class="text-uppercase">Lo Último</h5>
+        </div>
       </div>
   </div>
      <!-- controls -->
@@ -194,28 +210,31 @@
   </div>
 </div>
 </div>
+</div>
 
-<div class="row">
+<div class="row ml-2">
   <h3>Productos Recomendados</h3>
 </div>
 
-<div class="row">
+<div id="products" class="row">
 
   <div class="col">
-    <div class="card h-100">
+    <div class="card">
     <img src="img/user.png" class="card-img-top">
     <div class="card-body">
+      <h5 class="card-title">Cosa</h5>
       <p class="card-text">
-        bla bla bla
+        Precio
       </p>
     </div>
   </div>
 </div>
 
 <div class="col">
-  <div class="card h-100">
+  <div class="card">
   <img src="img/user.png" class="card-img-top">
   <div class="card-body">
+    <h5 class="card-title">Titulo</h5>
     <p class="card-text">
       bla bla bla
     </p>
@@ -224,9 +243,10 @@
 </div>
 
 <div class="col">
-  <div class="card h-100">
+  <div class="card">
   <img src="img/user.png" class="card-img-top">
   <div class="card-body">
+    <h5 class="card-title">Titulo</h5>
     <p class="card-text">
       bla bla bla
     </p>
@@ -235,9 +255,10 @@
 </div>
 
 <div class="col">
-  <div class="card h-100">
+  <div class="card">
   <img src="img/user.png" class="card-img-top">
   <div class="card-body">
+    <h5 class="card-title">Titulo</h5>
     <p class="card-text">
       bla bla bla
     </p>
@@ -246,9 +267,10 @@
 </div>
 
 </div>
+</div>
 
-<div class="container-fluid">
-<footer class="page-footer font-small bg-dark pt-4">
+<div class="container-fluid bg-dark">
+<footer class="page-footer font-small pt-4">
 
   <div class="container-fluid text-center text-md-left">
 
@@ -368,11 +390,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
+<script type="text/javascript" src="src/main.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="src/main.js"></script>
 
 </html>
