@@ -25,30 +25,39 @@ div .navbar-nav{
   margin-left: 44vh;
 }
 
+input[type="search"] {
+  border-radius: 1vh;
+}
+
+form .fa-search {
+  position: relative;
+  left: 20vh;
+}
+
 #paris {
-  width: 200vh;
+  width: 220vh;
   height: 150vh;
 }
 
 #heels {
-  width: 80vh;
+  position: relative;
+  width: 85vh;
   height: 80vh;
-  margin-right: 0;
-  padding-right: 0;
+  right: 1.8vh;
 }
 
 #heelsu {
-  width: 200vh;
+  width: 220vh;
   height: 80vh;
   margin-right: 0;
   padding-right: 0;
 }
 
 #handbag {
-  width: 119vh;
+  position: relative;
+  width: 132vh;
   height: 80vh;
-  margin-left: 0;
-  padding-left: 0;
+  right: 2.3vh;
 }
 
 nav .float-right{
@@ -59,6 +68,8 @@ nav .float-right{
 
 .thumbnail {
     position: relative;
+    padding: 0;
+    white-space: nowrap;
 }
 
 .caption  {
@@ -72,21 +83,192 @@ nav .float-right{
 }
 
 #heelsCaption {
-  left: 7vh;
+  left: 2vh;
 }
 
 #handbagCaption  {
-    left: 87vh;
-    border-left: 0;
+    left: 82vh;
+    top: 72.5vh;
 }
 
 .carousel-inner {
-  width: 200vh;
+  width: 220vh;
   height: 65vh;
+}
+
+.carousel-inner img {
+  width: 220vh;
+  height: 100vh;
+}
+
+.carousel-inner .carousel-caption {
+  position: relative;
+  top: -44vh;
+  margin: 0vh 0vh;
+  padding: 0vh 0vh;
+  right: 100vh;
+  height: 10vh;
+  border-radius: 1vh;
+  background: rgba(255, 255, 255, 0.5);
+  width: 30vh;
+  text-align: left;
+}
+
+.carousel-inner .carousel-caption h5 {
+  color: black;
+  font-size: 25px;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+#carrusel {
+  margin: 0vh 0vh;
+  padding: 0vh 0vh;
+  position: relative;
+  left: 0vh;
+}
+
+
+
+#blog {
+  height: 12vh;
+  background: rgba(43,58,83,0.5);
+}
+
+#blog li {
+  position: relative;
+  right: 31.5vh;
+  top: -9.8vh;
+}
+
+#blog li a {
+  background: rgba(40,68,116,0.3);
+  width: 10vh;
+  padding: 0.05vh 0.5vh;
+  text-align: center;
+  font-size: 16px;
+}
+
+#blog li a:hover {
+  background: rgba(40,68,116,0.5)
+}
+
+.navbar-brand img {
+  margin-left: 1vh;
+}
+
+.navbar-brand h3 {
+  position: relative;
+  left: 12vh;
+  top: -9.5vh;
+  font-size: 35px;
 }
 
 a {
   color: rgba(255, 255, 255, 0.5);
+}
+
+#fitness {
+  background: rgba(235,127,0,0.6);
+  height: 80vh;
+}
+
+#fitness .card {
+  margin-top: 10vh;
+  margin-left: 13vh;
+  width: 40vh;
+  height: 60vh;
+  background: rgba(188,191,196,0.9);
+}
+
+
+#fitness img {
+  position: relative;
+  width: 40vh;
+  height: 40vh;
+}
+
+#carouselControls .carousel-inner {
+  position: relative;
+  width: 150vh;
+  height: 100vh;
+  left: 30vh;
+}
+
+#carouselControls img {
+  position: relative;
+  top: 15vh;
+  height: 70vh;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: relative;
+  top: 5vh;
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: blue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: blue;
+}
+
+.carousel-control-next-icon {
+  left: 50vh;
+}
+
+#carouselControls .carousel-inner .carousel-caption {
+  padding: 0 auto;
+  width: 25vh;
+  border-radius: 0.5vh;
+  background: rgba(10,6,1,0.5);
+  height: 5vh;
+}
+
+#ultimo {
+  text-align: center;
+  margin: 0vh 0vh;
+  padding: 0vh 0vh;
+  position: relative;
+  left: 60vh;
+  top: -2vh;
+}
+
+#ultimo h5 {
+  color: rgba(252,156,42,0.8);
+}
+
+#carouselControls .carousel-inner .carousel-caption:hover {
+  cursor: pointer;
+  background: rgba(10,6,1,0.7)
+}
+
+
+#products {
+  margin-top: 3vh;
+}
+#products .col {
+  height: 60vh;
+}
+
+#products .card {
+  width: 40vh;
+}
+
+#products img {
+  width: 40vh;
+  height: 40vh;
 }
 
 footer {
@@ -129,4 +311,8 @@ footer .row {
   position: relative;
   left: 10px;
   top: 9.5px;
+}
+
+.hide {
+  display: none;
 }
