@@ -15,10 +15,12 @@
 
   <nav class="navbar-light navbar-expand-sm">
     <h1 class="text-center">Le Rousse</h1>
+    <div class="navWrapper bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-support="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+  </div>
       <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -40,21 +42,26 @@
             <a class="nav-link" href="#">Accesorios</a>
             </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 ml-auto">
-        <img class="float-right" src="img/navigation.png" width="35vh" height="35vh">
-        <img class="float-right" src="img/user.png" width="35vh" height="35vh">
-        <img class="float-right" src="img/cart.png" width="35vh" height="35vh">
-           <span class="fa fa-search"></span>
-           <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-         </form>
      </div>
+
+     <div class="wrapper">
+     <form class="form-inline my-2 my-lg-0 ml-auto">
+       <img class="float-right" src="img/navigation.png" width="35vh" height="35vh">
+       <img class="float-right" src="img/user.png" width="35vh" height="35vh">
+       <img class="float-right" src="img/cart.png" width="35vh" height="35vh">
+          <span class="fa fa-search"></span>
+          <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+         <div class="nav-line"></div>
+        </form>
+      </div>
   </nav>
 
 
 <div class="container-fluid">
 
   <div class="row">
-    <img id="paris" class="rounded mx-auto dblock" src="img/friends.jpg">
+    <img id="paris1" class="rounded mx-auto dblock" src="img/friends.jpg">
+    <img id="paris2" class="rounded mx-auto dblock" src="img/friends2.jpg">
 </div>
 
   <div class="row">
@@ -212,7 +219,7 @@
 </div>
 </div>
 
-<div class="row ml-2">
+<div id="productText" class="row ml-2">
   <h3>Productos Recomendados</h3>
 </div>
 
@@ -313,7 +320,7 @@
     </div>
 
 
-      <div class="col ">
+      <div id="rouseWorld" class="col ">
 
         <h5>Le Rousse World</h5>
         <ul class="list-unstyled">
@@ -333,7 +340,7 @@
     </div>
 
 
-      <div class="col">
+      <div id="rouseWorld" class="col">
 
         <h5>Legal and Cookies</h5>
         <ul class="list-unstyled">
