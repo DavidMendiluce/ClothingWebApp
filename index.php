@@ -1,13 +1,19 @@
+<?php
+  session_start();
+ ?>
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <head>
 <!--Bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--Angular.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 <title>Le Rousse</title>
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./public/style.css" >
+<link rel="stylesheet" type="text/css" href="./public1/style.css" >
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
@@ -46,9 +52,9 @@
 
      <div class="wrapper">
      <form class="form-inline my-2 my-lg-0 ml-auto">
-       <img class="float-right" src="img/navigation.png" width="35vh" height="35vh">
-       <img class="float-right" src="img/user.png" width="35vh" height="35vh">
-       <img class="float-right" src="img/cart.png" width="35vh" height="35vh">
+       <img id="navigation" class="float-right" src="img/navigation.png" width="35vh" height="35vh">
+       <img id="user" class="float-right" src="img/user.png" width="35vh" height="35vh">
+       <img id="cart" class="float-right" src="img/cart.png" width="35vh" height="35vh">
           <span class="fa fa-search"></span>
           <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
          <div class="nav-line"></div>
@@ -56,11 +62,17 @@
       </div>
   </nav>
 
-
 <div class="container-fluid">
 
-  <div class="row">
+  <div id="parisRow" class="row">
     <img id="paris1" class="rounded mx-auto dblock" src="img/friends.jpg">
+    <div class="loginRow hide">
+      <p>You are a user?</p>
+      <a class="btn btn-secondary" href="login.php" role="button">Acceder</a>
+      <div class="loginLine"></div>
+      <p class="noUser">Not a user?</p>
+      <a class="btn btn-dark" href="signup.php" role="button">Registrarse</a>
+    </div>
     <img id="paris2" class="rounded mx-auto dblock" src="img/friends2.jpg">
 </div>
 
@@ -276,7 +288,7 @@
 </div>
 </div>
 
-<div class="container-fluid bg-dark">
+<div id="footer" class="container-fluid bg-dark">
 <footer class="page-footer font-small pt-4">
 
   <div class="container-fluid text-center text-md-left">
@@ -390,14 +402,18 @@
 </footer>
 </div>
 
-</div>
 <!-- Bootstrap JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
-<script type="text/javascript" src="src/main.js"></script>
+<!--modules-->
+<script type="text/javascript" src="js/app.js"></script>
+<!--controllers-->
+<script type="text/javascript" src="js/Controllers/shoppingCartController.js"></script>
+<script type="text/javascript" src="js/Controllers/index.js"></script>
+<!--interactivity-->
+<script type="text/javascript" src="js/main1.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
