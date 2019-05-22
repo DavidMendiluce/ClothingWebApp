@@ -48,7 +48,7 @@
             <a class="nav-link" href="#">Ultima Semana</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Coleccion</a>
+            <a class="nav-link" href="shoppingCart.php">Coleccion</a>
             </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Calzado</a>

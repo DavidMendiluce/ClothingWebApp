@@ -10,7 +10,7 @@
 <title>Le Rousse</title>
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./public/style.css" >
+<link rel="stylesheet" type="text/css" href="public1/style.css" >
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
@@ -35,7 +35,7 @@
             <a class="nav-link" href="#">Ultima Semana</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Coleccion</a>
+            <a class="nav-link" href="shoppingCart.php">Coleccion</a>
             </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Calzado</a>
@@ -53,7 +53,7 @@
      <form class="form-inline my-2 my-lg-0 ml-auto">
        <img id="navigation" class="float-right" src="img/navigation.png" width="35vh" height="35vh">
        <img id="user" class="float-right" src="img/user.png" width="35vh" height="35vh">
-       <img id="cart" class="float-right" src="img/cart.png" width="35vh" height="35vh">
+        <img id="cart" class="float-right" src="img/cart.png" width="35vh" height="35vh">
           <span class="fa fa-search"></span>
           <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
          <div class="nav-line"></div>
