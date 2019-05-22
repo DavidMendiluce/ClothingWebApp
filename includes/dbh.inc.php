@@ -2,8 +2,8 @@
 
 $servername = "localhost";
 $dBUsername = "root";
-$dBPassword = "";
-$dBName = 'users';
+$dBPassword = "root";
+$dBName = 'clothing';
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 

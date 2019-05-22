@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['registrarse'])) {
+if(isset($_POST['resgistrarse'])) {
 
   require 'dbh.inc.php';
 
@@ -9,7 +9,7 @@ if(isset($_POST['registrarse'])) {
   $passwordRepeat = $_POST['pwd-repeat'];
 
 if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
-    header("Location: ../signup.php?error=emptyfields&uid=".$username."&email=".$email);
+    header("Location: ../signup.php?error=emptyfields&username=".$username."&email=".$email);
     exit();
   }
   else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-P]*$/", $username)) {
@@ -47,7 +47,6 @@ if (empty($username) || empty($email) || empty($password) || empty($passwordRepe
 
          $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
          header("location: ../signup.php?signup=successful");
-
 
        }
 

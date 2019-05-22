@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['Acceder'])){
+if(isset($_POST['acceder'])){
 
   require 'dbh.inc.php';
 
@@ -17,9 +17,8 @@ if(isset($_POST['Acceder'])){
   }
     if ($row = mysqli_fetch_assoc($result)) {
          session_start();
-         $_SESSION['userId'] = $row['id'];
-         $_SESSION['userUid'] = $row['username'];
-         header("location: ../index.php?login=success");
+         $_SESSION['sesion'] = $mail;
+         header("location: ../login.php?login=success");
           echo "good";
       }
 
@@ -27,4 +26,16 @@ if(isset($_POST['Acceder'])){
         header("location: ../index.php?error=wrongpwd");
         exit();
       }
+
+      if(isset($_SESSION['sesion'])) {
+        header("Location: ../indexLogin.php");
+      } else {
+        header("Location: ../signup.php");
+      }
+
+}
+
+else {
+  header("location: ../signup.php");
+  exit();
 }
