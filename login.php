@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -6,7 +9,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./public1/style.css" >
+<link rel="stylesheet" type="text/css" href="./public/style.css" >
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
@@ -18,27 +21,30 @@
 
   <div id="SignupForm" class="login">
 
+
     <?php
       error_reporting(0);
-      if (isset($_SESSION['userId'])) {
+      if (isset($_SESSION['sesion'])) {
         echo '<form action="includes/logout.inc.php" method="post">
           <button type="submit" name="logout-submit">Logout</button>
         </form>';
       } else {
-        echo '   <div class="form-group">
+        echo '  <form class="form-login" action="includes/login.inc.php" method="post">
+        <div class="form-group">
             <label for="exampleEmail">Username/Email:</label>
-            <input type="username-email" class="form-control" id="exampleEmail"></input>
+            <input name="email" class="form-control" id="exampleEmail"></input>
          </div>
 
 
          <div class="form-group">
             <label for="examplePassword">Password:</label>
-            <input type="password" class="form-control" id="examplePassword"></input>
+            <input name="password" class="form-control" id="examplePassword"></input>
          </div>
 
 
          <button type="submit" name="acceder" class="btn btn-primary">Login</button>
-         <a class="signup" href="signup.php">Registrarse</a>';
+         <a class="signup" href="signup.php">Registrarse</a>
+            </form>';
       }
 
       if (isset($_GET['error'])) {
@@ -91,7 +97,7 @@
   <script type="text/javascript" src="js/Controllers/shoppingCartController.js"></script>
   <script type="text/javascript" src="js/Controllers/index.js"></script>
   <!--interactivity-->
-  <script type="text/javascript" src="js/main1.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="

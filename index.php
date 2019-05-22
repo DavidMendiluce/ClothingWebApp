@@ -10,7 +10,7 @@
 <title>Le Rousse</title>
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./public1/style.css" >
+<link rel="stylesheet" type="text/css" href="./public/style.css" >
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
@@ -412,7 +412,7 @@
 <script type="text/javascript" src="js/Controllers/shoppingCartController.js"></script>
 <script type="text/javascript" src="js/Controllers/index.js"></script>
 <!--interactivity-->
-<script type="text/javascript" src="js/main1.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
